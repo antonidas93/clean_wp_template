@@ -79,3 +79,6 @@ function cc_mime_types($mimes) {
 
 //Include с напоминаниемя в админке при редактировании постов
 require get_template_directory() . '/include/admin_notice.php';
+
+//отключаем Gutenberg
+add_filter('use_block_editor_for_post', '__return_false');
